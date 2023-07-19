@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9qZ-t1-Tm2">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="ZFy-tX-Wvp" customClass="TabBarController" customModule="LastFMiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jCd-Lb-VD5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RTG-hw-ZkO" kind="relationship" relationship="viewControllers" id="U2e-aL-YtQ"/>
+                        <segue destination="CJ7-9B-KgA" kind="relationship" relationship="viewControllers" id="hxq-bQ-R0a"/>
+                        <segue destination="cQl-5W-ylj" kind="relationship" relationship="viewControllers" id="AFf-qY-Ti8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rkt-aV-M6U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="291" y="-675"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="Ngj-Uf-Ta8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeViewController" id="RTG-hw-ZkO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="KTH-sZ-2C4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPh-tW-lAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1259" y="-782"/>
+        </scene>
+        <!--FavouritesViewController-->
+        <scene sceneID="EFQ-sG-YLW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FavouritesViewController" id="CJ7-9B-KgA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="drI-fL-iZF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4j-UB-xIQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1259" y="-675"/>
+        </scene>
+        <!--ProfileViewController-->
+        <scene sceneID="hs3-3L-RMm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfileViewController" id="cQl-5W-ylj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="NQN-gq-KUU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4iM-F6-c0j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1259" y="-583"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+    </resources>
+</document>
